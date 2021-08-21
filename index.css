@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: 'Lobster', cursive;
+  color: white;
+  background: #202731;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding: 100px 20vw;
+}
+
+.curve {
+  position: absolute;
+  height: 225px;
+  width: 100%;
+  bottom: 0;
+}
+
+.curve::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 100%;
+}
