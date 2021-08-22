@@ -4,6 +4,10 @@ This project is a HTML static web page that displays a flexible background desig
 
 The two examples provided are ways to display a bubble element and a wave.
 
+## Check A Preview
+
+Check a preview of this webpage [here](http://htmlpreview.github.io/?https://github.com/melchord/wave-html/blob/master/index.html) using https://htmlpreview.github.io.
+
 ## Run the Webpage locally
 
 ### Requirements
