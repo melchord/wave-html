@@ -3,6 +3,7 @@ body {
   font-family: 'Lobster', cursive;
   color: white;
   background: #202731;
+  overflow-x: hidden;
 }
 
 section {
@@ -10,15 +11,32 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 400px;
+  min-height: 300px;
   padding: 100px 20vw;
+}
+
+.bubble::after {
+  content: '';
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  height: 80%;
+  width: 100%;
+  background-color: #0f0f10;
+}
+
+.dark {
+  background: #0f0f10;
 }
 
 .curve {
   position: absolute;
-  height: 225px;
+  height: 250px;
   width: 100%;
   bottom: 0;
+  text-align: center;
 }
 
 .curve::before {
@@ -26,5 +44,20 @@ section {
   display: block;
   position: absolute;
   border-radius: 100% 50%;
-  width: 100%;
+  width: 55%;
+  height: 100%;
+  background-color: #0f0f10;
+  transform: translate(85%, 60%);
+}
+
+.curve::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: #0f0f10;
+  transform: translate(-4%, 40%);
+  z-index: -1;
 }
