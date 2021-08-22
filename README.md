@@ -2,6 +2,8 @@
 
 This project is a HTML static web page that displays a flexible background design.
 
+The two examples provided are ways to display a bubble element and a wave.
+
 ## Run the Webpage locally
 
 ### Requirements
